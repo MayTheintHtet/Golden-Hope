@@ -7,7 +7,7 @@ function ContactPage() {
         <p className="contact-eyebrow">✦ GET IN TOUCH ✦</p>
         <h1 className="contact-title">Contact Us</h1>
         <p className="contact-subtitle">
-          We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          We'd love to hear from you. Send us a message and <br/> we'll respond as soon as possible.
         </p>
       </div>
 
@@ -18,7 +18,7 @@ function ContactPage() {
               <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
             </span>
             <div>
-              <h3>Email</h3>
+              <h3 className="text-align-left">Email</h3>
               <p>hello@goldenhope.com</p>
             </div>
           </div>
@@ -36,7 +36,7 @@ function ContactPage() {
               <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </span>
             <div>
-              <h3>Hours</h3>
+              <h3 className="text-align-left">Hours</h3>
               <p>Mon – Fri, 9am – 6pm EST</p>
             </div>
           </div>

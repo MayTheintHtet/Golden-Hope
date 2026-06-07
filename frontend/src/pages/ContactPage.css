@@ -33,6 +33,11 @@
   max-width: 500px;
   margin: 0 auto;
   line-height: 1.7;
+  padding: 10px 0;
+}
+
+.text-align-left {
+    text-align: left;
 }
 
 .contact-container {
@@ -60,6 +65,12 @@
 
 .contact-info-icon {
   font-size: 1.4rem;
+  margin-top: 2px;
+}
+
+.contact-info-icon svg {
+  color: #b8962e;
+  stroke: #b8962e;
   margin-top: 2px;
 }
 
