@@ -1,4 +1,3 @@
-cat > frontend/src/pages/Checkout.jsx << 'EOF'
 import { useNavigate } from "react-router-dom";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import PayPalButton from "../components/PayPalButton";
@@ -35,4 +34,3 @@ function Checkout() {
 }
 
 export default Checkout;
-EOF
