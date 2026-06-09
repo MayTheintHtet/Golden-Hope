@@ -12,9 +12,15 @@ app.use(express.json())
 
 const cartRoutes = require('./routes/cart') 
 const userRoutes = require('./routes/users')
+const authRoutes = require('./routes/auth')    //m
+
+
 app.use('/api/users', userRoutes)
 app.use('/api/products', productRoutes)
 app.use('/api/cart', cartRoutes)  
+app.use('/api/auth', authRoutes)               //m
+
+
 
 const PORT = process.env.PORT || 3000
 

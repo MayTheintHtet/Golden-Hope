@@ -1,18 +1,20 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+const authRoutes = require('./routes/auth')  
 
 dotenv.config();
 
 const app = express();
 
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.error("MongoDB connection failed:", err));
+app.use(express.json())                        
+app.use('/api/auth', authRoutes)               
 
-app.get("/", (req, res) => {
-  res.send("Backend working");
-});
 
-app.listen(5000, () => console.log("Running on port 5000"));
+const User = require('./models/user')
+
+
+// After your existing code, before app.listen:
+User.sync()
+  .then(() => console.log('User table ready'))
+  .catch(err => console.error('Table sync failed:', err))
