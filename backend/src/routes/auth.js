@@ -1,4 +1,3 @@
-cat > src/routes/auth.js << 'EOF'
 const express = require('express')
 const router = express.Router()
 const bcrypt = require('bcrypt')
@@ -36,4 +35,3 @@ router.post('/login', async (req, res) => {
 })
 
 module.exports = router
-EOF
