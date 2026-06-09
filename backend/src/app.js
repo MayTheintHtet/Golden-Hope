@@ -2,6 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const sequelize = require('./db')
 const productRoutes = require('./routes/products')
+const authRoutes = require('./routes/auth')      //m
+app.use('/api/auth', authRoutes)        //m
 
 const app = express()
 
